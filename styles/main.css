@@ -3,6 +3,7 @@ body{
     padding: 10px;
 }
 header{
+    position:relative;
     padding-bottom: 20px;
     padding-top: 20px;
     background: white;
@@ -21,6 +22,22 @@ header>a{
     font-size: larger;
     font-style: italic;
     color: black;
+
+}
+main{
+     font-size: 40px;
+     padding-bottom: 20px;
+ }
+
+footer{
+
+    bottom:0;
+    width:100%;
+    padding-left: 16cm;
+    height:60px;   /* Height of the footer */
+border-top: double;
+    font-style: oblique;
+    font-family: Georgia;
 
 }
 .dd-menu{
@@ -71,8 +88,6 @@ header>a{
 .dd-menu:hover .dd-but{
     background-color: floralwhite;
 }
-main{
-    font-size: 40px;
-    padding-bottom: 20px;
+#pancake{
+    font-size: 16px;
 }
-
