@@ -3,8 +3,10 @@ body{
     padding: 10px;
 }
 header{
+    padding-bottom: 20px;
+    padding-top: 20px;
     background: white;
-    border-bottom: solid black 5px;
+    border-bottom: solid black 15px;
     padding-left: 30px;
 }
 header>a{
@@ -27,37 +29,47 @@ header>a{
 
 }
 .dd-but{
-    background-color: red;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    background-color: white;
+    color: black;
+    border: solid black 2px;
     cursor: pointer;
+    font-family: Arial;
+    text-align-all: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: larger;
+    font-style: italic;
 }
 .dd-content{
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: whitesmoke;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dd-content a{
     color: black;
-    padding: 12px 16px;
+    text-align-all: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     text-decoration: none;
     display: block;
 }
 
 .dd-content a:hover {
-    background-color: #f1f1f1
+    background-color: floralwhite;
 }
 
 .dd-menu:hover .dd-content{
     display: block;
 }
 .dd-menu:hover .dd-but{
-    background-color: #3e8e41;
+    background-color: floralwhite;
 }
 
 
