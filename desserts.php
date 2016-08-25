@@ -9,18 +9,18 @@
 </head>
 <body>
 <header>
-    <a href="index.html" id="linkHome">Home</a>
-    <a href="registration.html" id="registration">Register</a>
-    <a href="login.html" id="linkLogin">Login</a>
+    <a href="index.php" id="linkHome">Home</a>
+    <a href="registration.php" id="registration">Register</a>
+    <a href="login.php" id="linkLogin">Login</a>
     <div class="dd-menu">
-        <a href="recipes.html" id="recipes" class="dd-but">Recipes
+        <a href="recipes.php" id="recipes" class="dd-but">Recipes
             <div class="dd-content">
 
-                <a href="breakfast.html" id="breakfast">Breakfast</a>
-                <a href="lunch.html" id="lunch">Lunch</a>
-                <a href="dinner.html" id="dinner">Dinner</a>
-                <a href="desserts.html" id="desserts">Desserts</a>
-                <a href="howTo.html" id="helpfulHowTo">Helpful How-To</a>
+                <a href="breakfast.php" id="breakfast">Breakfast</a>
+                <a href="lunch.php" id="lunch">Lunch</a>
+                <a href="dinner.php" id="dinner">Dinner</a>
+                <a href="desserts.php" id="desserts">Desserts</a>
+                <a href="howTo.php" id="helpfulHowTo">Helpful How-To</a>
             </div>
 
         </a>
@@ -31,8 +31,6 @@
         <h1>Welcome</h1>
         <div>Welcome to my Food Blog</div>
     </section>
-
-
 </main>
 <footer>
     <img src="images/BettysLogo.ico" alt="HTML5 Icon" style="width:60px;height:60px; padding-left: 50px">
