@@ -43,7 +43,7 @@
         $q = $mysqli -> query("SELECT * FROM posts WHERE category = 'desserts'");
         while($r = $q -> fetch_assoc()){
             echo '
-                <div class="posts"><h1>'.$r["title"].'</h1>
+               <div class="posts"><h1>'.$r["title"].'</h1>
                 '.$r["content"].'
                  <a href="deletePost.php?id='.$r['id'].'&return=desserts">Delete</a></div>
             ';

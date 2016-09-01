@@ -55,11 +55,12 @@
         <h1>Add a new recipe for <?php echo $category; ?>.</h1>
 
         <form method="POST" name="addPosts" action="#">
-            Title:
-                <input type="text" name="title"/>
+            Title:<br>
+                <textarea name="title" rows="2" cols="50"></textarea>
             <br>
             Content:
-                <textarea name="content"></textarea>
+            <br>
+                <textarea name="content" rows="20" cols="50"></textarea>
             <input type="submit" name="add" value="Add"/>
         </form>
     </section>

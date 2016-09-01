@@ -39,9 +39,17 @@
 </header>
 <main>
     <section id="viewHome">
-        <h1>Welcome</h1>
-        <div>Welcome to my Food Blog</div>
-    </section>
+        <h1>Welcome to Recipes</h1>
+        <?php
+        $q = $mysqli -> query("SELECT ALL * FROM  posts");
+        while($r = $q -> fetch_assoc()){
+            echo '
+              <p id="posted"> <div class="posts"><h1>'.$r["title"].'</h1>
+                '.$r["content"].'   
+                </div></p>
+            ';
+        }
+        ?></section>
 
 
 </main>

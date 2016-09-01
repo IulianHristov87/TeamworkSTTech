@@ -43,4 +43,5 @@ function deletePost($id,$return,$mysqli){
 		return false;
 	}
 }
+
 ?>
