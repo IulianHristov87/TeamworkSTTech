@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-
 <?php
     require 'config.php';
 ?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,23 +27,31 @@
         <a href="recipes.php" id="recipes" class="dd-but">Recipes
             <div class="dd-content">
 
-                    <a href="breakfast.php" id="breakfast">Breakfast</a>
-                    <a href="lunch.php" id="lunch">Lunch</a>
-                    <a href="dinner.php" id="dinner">Dinner</a>
-                    <a href="desserts.php" id="desserts">Desserts</a>
-                    <a href="howTo.php" id="helpfulHowTo">Helpful How-To</a>
+                <a href="breakfast.php" id="breakfast">Breakfast</a>
+                <a href="lunch.php" id="lunch">Lunch</a>
+                <a href="dinner.php" id="dinner">Dinner</a>
+                <a href="desserts.php" id="desserts">Desserts</a>
+                <a href="howTo.php" id="helpfulHowTo">Helpful How-To</a>
             </div>
 
         </a>
     </div>
-
-
 </header>
 <main>
-    <section id="viewHome">
-        <h1>Welcome <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?></h1>
-        <div>Welcome to my Food Blog</div>
-    </section>
+    <main>
+    <?php
+        $q = $mysqli -> query("SELECT * FROM posts WHERE category = 'desserts'");
+        while($r = $q -> fetch_assoc()){
+            echo '
+                <div class="posts"><h1>'.$r["title"].'</h1>
+                '.$r["content"].'
+                 <a href="deletePost.php?id='.$r['id'].'&return=desserts">Delete</a></div>
+            ';
+        }
+    ?>
+    <br>
+    <a href="addPost.php?category=desserts">Add new recipe</a>
+</main>
 
 </main>
 <footer>

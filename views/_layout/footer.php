@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 
     <footer>
         <img src="<?APP_ROOT?>./content/images/BettysLogo.jpg" alt="HTML5 Icon" style="width:60px;height:60px; padding-left: 50px">
@@ -8,6 +10,7 @@
 
     <?php require_once('show-validation-errors.php'); ?>
 
-</body>
-
 </html>
+
+
+

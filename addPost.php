@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-
 <?php
     require 'config.php';
-?>
+    require 'functions.php';
 
+    $category = $_GET['category'];
+
+    if(isset($_POST['add'])){
+        $title = $_POST['title'];
+        $content = $_POST['content'];
+
+        if(addPost($title, $content, $category, $mysqli)){
+            header('Location: '.$category.'.php');
+            exit();
+        }        
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,23 +40,30 @@
         <a href="recipes.php" id="recipes" class="dd-but">Recipes
             <div class="dd-content">
 
-                    <a href="breakfast.php" id="breakfast">Breakfast</a>
-                    <a href="lunch.php" id="lunch">Lunch</a>
-                    <a href="dinner.php" id="dinner">Dinner</a>
-                    <a href="desserts.php" id="desserts">Desserts</a>
-                    <a href="howTo.php" id="helpfulHowTo">Helpful How-To</a>
+                <a href="breakfast.php" id="breakfast">Breakfast</a>
+                <a href="lunch.php" id="lunch">Lunch</a>
+                <a href="dinner.php" id="dinner">Dinner</a>
+                <a href="desserts.php" id="desserts">Desserts</a>
+                <a href="howTo.php" id="helpfulHowTo">Helpful How-To</a>
             </div>
 
         </a>
     </div>
-
-
 </header>
 <main>
     <section id="viewHome">
-        <h1>Welcome <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?></h1>
-        <div>Welcome to my Food Blog</div>
+        <h1>Add a new recipe for <?php echo $category; ?>.</h1>
+
+        <form method="POST" name="addPosts" action="#">
+            Title:
+                <input type="text" name="title"/>
+            <br>
+            Content:
+                <textarea name="content"></textarea>
+            <input type="submit" name="add" value="Add"/>
+        </form>
     </section>
+
 
 </main>
 <footer>

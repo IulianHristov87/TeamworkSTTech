@@ -1,17 +1,28 @@
 <!DOCTYPE html>
+<?php
+    require 'config.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../content/main.css"/>
+    <link rel="stylesheet" type="text/css" href="content/main.css"/>
 
     <title>Food Blog</title>
 
 </head>
 <body>
 <header>
-    <a href="home.php" id="linkHome">Home</a>
-    <a href="registration.php" id="registration">Register</a>
-    <a href="login.php" id="linkLogin">Login</a>
+    <a href="index.php" id="linkHome">Home</a>
+    <?php
+        if(!isset($_SESSION['username'])){
+            echo '
+                <a href="registration.php" id="registration">Register</a>
+                <a href="login.php" id="linkLogin" >Login</a>';
+        }else{
+            echo '
+                <a href="logout.php" id="linkLogout">Logout</a>';
+        }
+    ?>
     <div class="dd-menu">
         <a href="recipes.php" id="recipes" class="dd-but">Recipes
             <div class="dd-content">
@@ -35,7 +46,7 @@
 
 </main>
 <footer>
-    <img src="../content/images/BettysLogo.jpg" alt="HTML5 Icon" style="width:60px;height:60px; padding-left: 50px">
+    <img src="content/images/BettysLogo.jpg" alt="HTML5 Icon" style="width:60px;height:60px; padding-left: 50px">
     BettyG's Food Blog©
 </footer>
 </body>

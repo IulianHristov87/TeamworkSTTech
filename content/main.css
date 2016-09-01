@@ -91,3 +91,9 @@ border-top: double;
 #pancake{
     font-size: 16px;
 }
+
+.posts{
+    padding-left: 15px;
+    font-size: 14pt;
+    border-bottom: 1px solid;    
+}
