@@ -56,12 +56,12 @@
 
         <form method="POST" name="addPosts" action="#">
             Title:<br>
-                <textarea name="title" rows="2" cols="50"></textarea>
+                <textarea name="title" rows="2" cols="30" style="height: 30px;width: 295px"></textarea>
             <br>
             Content:
             <br>
-                <textarea name="content" rows="20" cols="50"></textarea>
-            <input type="submit" name="add" value="Add"/>
+                <textarea name="content" rows="20" cols="30" style="width: 295px"></textarea>
+            <input type="submit" name="add" value="Add" style="border: solid black 4px; padding: 15px"/>
         </form>
     </section>
 
