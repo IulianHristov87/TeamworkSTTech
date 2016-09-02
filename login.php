@@ -53,7 +53,7 @@
 <main>
 
     <section id="viewLogin">
-        <h1>Please Login</h1>
+        <h1 style="text-align: center">Please Login</h1>
         <form name="login" method="POST" action="#" id="formLogin">
             <div>User name:</div>
             <div><input title="usernameLogin" type="text" name="username"/> </div>

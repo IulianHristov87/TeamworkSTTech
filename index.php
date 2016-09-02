@@ -43,7 +43,7 @@
 </header>
 <main>
     <section id="viewHome">
-        <h1 style="padding-left:100px ;"><i>Welcome</i> <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?></h1>
+        <h1 style="text-align: center""><i>Welcome</i> <?php if(isset($_SESSION['username'])) echo $_SESSION['username']; ?></h1>
         <div style="align-content: center;" ><i>Welcome to my Food Blog</i></div>
     </section>
     <img src="content/images/how-to-make-the-ultimate-cheese-plate-5w.jpg" alt="HTML5 Icon" style="width:100%; height:70%;">

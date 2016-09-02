@@ -54,7 +54,7 @@
 <main>
 
     <section id="viewRegistration">
-        <h1>Registration</h1>
+        <h1 style="text-align: center">Registration</h1>
         <form method="POST" id="formRegister">
             <div>User name:</div>
             <div><input title="username" type="text" name="username"/> </div>
